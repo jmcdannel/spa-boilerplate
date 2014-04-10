@@ -1,1 +1,0 @@
-define(["backbone","modules/HelloWorld"],function(e,t){var n=e.Router.extend({routes:{"":"hello"},hello:function(){t.init()}});return n});

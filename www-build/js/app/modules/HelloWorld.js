@@ -1,1 +1,0 @@
-define(["models/HelloWorld","views/HelloWorld"],function(e,t){function n(){var n=new t({model:new e});n.render()}return{init:n}});
