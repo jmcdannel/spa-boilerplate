@@ -1,0 +1,15 @@
+
+footer {
+  border-top: 1px solid $red;
+}
+.tech-list {
+  overflow: auto;
+} 
+
+.tech-list li {
+  display: block;
+  float: left;
+  padding: 5px 20px 5px 0;
+  list-style: none;
+  font-size: 12px;
+}

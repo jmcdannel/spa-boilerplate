@@ -1,0 +1,23 @@
+header {
+  background: $darkBlue;
+  border-bottom: 1px solid $lightBlue;
+  min-height: 40px;
+}
+header a { 
+  color: $cream;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: bold;
+}
+header a:hover {
+  text-decoration: none;
+  color: $red;
+}
+
+header nav:after {
+  content: '';
+  display: block;
+  clear: both;
+}

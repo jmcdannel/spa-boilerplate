@@ -1,0 +1,45 @@
+body {
+  background: #FFF;
+  color: $darkGrey;
+}
+h1 {
+  color: $darkBlue;
+}
+a { 
+  color: $red;
+  text-decoration: none;
+  transition: color 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in 0;
+}
+a:hover {
+  text-decoration: underline;
+}
+button {
+  position: relative;
+  display: inline-block;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $darkGrey;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+  white-space: nowrap;
+  background-color: $lightBlue;
+  @include gradient(lighten($cream, 20%), $cream);
+  background-repeat: repeat-x;
+  border-radius: 3px;
+  border: 1px solid #d5d5d5;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  transition: color 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in 0;
+}
+button:hover {
+  color: $red;
+}

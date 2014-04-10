@@ -1,0 +1,11 @@
+{
+  "tech" : [
+    { "text": "BackboneJS", "link": "#" },
+    { "text": "Lodash", "link": "#" },
+    { "text": "jQuery", "link": "#" },
+    { "text": "RequireJS", "link": "#" },
+    { "text": "HandlebarsJS", "link": "#" },
+    { "text": "Modernizr", "link": "#" },
+    { "text": "Grunt", "link": "#" }
+  ]
+}

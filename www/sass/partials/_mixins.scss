@@ -1,0 +1,136 @@
+
+@mixin box-sizing($sizing: border-box) {
+    -webkit-box-sizing: $sizing;
+       -moz-box-sizing: $sizing;
+            box-sizing: $sizing;
+}
+@mixin boxShadow($x: 5px, $y: 5px, $blur: 10px, $spread: 10px, $color: #000) {  
+  -webkit-box-shadow: $x $y $blur $spread $color;
+     -moz-box-shadow: $x $y $blur $spread $color;
+      box-shadow: $x $y $blur $spread $color;
+}
+
+
+@mixin gradient($c1: #fff, $c2: #000) {
+    background-image: -webkit-linear-gradient(top, $c1, $c2); 
+    background-image:    -moz-linear-gradient(top, $c1, $c2); 
+    background-image:     -ms-linear-gradient(top, $c1, $c2); 
+    background-image:      -o-linear-gradient(top, $c1, $c2); 
+    background-image:         linear-gradient(to bottom, $c1, $c2);
+}
+
+@mixin rounded($radius: 3px) {
+    -webkit-border-radius: $radius; 
+            border-radius: $radius;
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding;
+            background-clip: padding-box;
+}
+
+@mixin transform($transform: rotate(360deg)) {
+    -webkit-transform: $transform;
+            transform: $transform;
+}
+
+@mixin opacity($opacity: 1) {
+    -webkit-opacity: $opacity;
+       -moz-opacity: $opacity;
+            opacity: $opacity;
+}
+
+@mixin transition($transition: all 0.2s) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
+@mixin background-size($background-size: cover) {
+    -webkit-background-size: $background-size;
+       -moz-background-size: $background-size;
+         -o-background-size: $background-size;
+            background-size: $background-size;
+}
+@mixin box-sizing($sizing: border-box) {
+    -webkit-box-sizing: $sizing;
+       -moz-box-sizing: $sizing;
+            box-sizing: $sizing;
+}
+
+@mixin box-shadow($shadow: 0 1px 1px rgba(0,0,0,.3)) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
+
+@mixin linear-top-gradient($c1: #fff, $c2: #000) {
+    background-image: -webkit-linear-gradient(top, $c1, $c2); 
+    background-image:    -moz-linear-gradient(top, $c1, $c2); 
+    background-image:     -ms-linear-gradient(top, $c1, $c2); 
+    background-image:      -o-linear-gradient(top, $c1, $c2); 
+    background-image:         linear-gradient(to bottom, $c1, $c2);
+}
+
+
+@mixin transform($transform: rotate(360deg)) {
+    -webkit-transform: $transform;
+            transform: $transform;
+}
+
+@mixin opacity($opacity: 1) {
+    -webkit-opacity: $opacity;
+       -moz-opacity: $opacity;
+            opacity: $opacity;
+}
+
+@mixin transition($transition: all 0.2s) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
+@mixin background-size($background-size: cover) {
+    -webkit-background-size: $background-size;
+       -moz-background-size: $background-size;
+         -o-background-size: $background-size;
+            background-size: $background-size;
+}
+
+
+$largeWidth: 1400px;
+$normalWidth: 1024px;
+$smallWidth: 768px;
+
+$largeHeight: 825px;
+$smallHeight: 645px;
+
+@mixin breakpoint($point) {
+  @if $point == normal {
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: $largeWidth) { @content; }
+  }
+  @else if $point == small {
+    @media screen and (max-width: 1023px) and (min-width: 320px) { @content; }
+  }
+}
+@mixin vbreakpoint($vpoint, $hpoint) {
+  
+  @if $vpoint == small and $hpoint == large {
+    @media (max-height: $smallHeight) and (min-width: $largeWidth) { @content; }
+  }
+  @else if $vpoint == large and $hpoint == large {
+    @media (min-height: $largeHeight) and (min-width: $largeWidth) { @content; }
+  }
+  @else if $vpoint == small and $hpoint == normal {
+    @media (max-height: $smallHeight) and (min-width: $normalWidth) { @content; }
+  }
+  @else if $hpoint == small {
+    @media screen and (max-width: 1023px) and (min-width: 320px) { @content; }
+  }
+  
+}
