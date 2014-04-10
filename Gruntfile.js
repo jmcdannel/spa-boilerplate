@@ -23,11 +23,10 @@ module.exports = function(grunt) {
     requirejs: {
       compile: {
         options: {
-          appDir: 'www',
-          baseUrl: "js/app",
+          baseUrl: "www/js/app",
           mainConfigFile: "www/js/app.js",
-          name: "../app", // assumes a production build using almond
-          out: "js/optimized.js"
+          out: "www/js/app.min.js",
+          name : "../app"
         }
       }
     },
