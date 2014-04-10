@@ -2,7 +2,15 @@
   "name": "rjs",
   "version": "0.0.0",
   "devDependencies": {
-    "grunt": "^0.4.4",
-    "grunt-contrib-handlebars": "^0.7.0"
+    "grunt" :                       "~0.4.0",
+    "grunt-contrib-cssmin":         "*",
+    "grunt-contrib-sass":           "*",
+    "grunt-contrib-uglify":         "*",
+    "grunt-contrib-watch":          "*",
+    "grunt-cssc":                   "*",
+    "grunt-htmlhint":               "*",
+    "matchdep":                     "*",
+    "grunt-contrib-handlebars":     "^0.7.0",
+    "grunt-contrib-requirejs":      "^0.4.3"
   }
 }
