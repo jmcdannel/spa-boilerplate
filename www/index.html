@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Require JS Optimization Demo</title>
-	<link rel="Stylesheet" href="css/styles.css">
+	<!--<link rel="Stylesheet" href="css/styles.css">-->
+	<link rel="Stylesheet" href="css/styles.min.css">
 	<!--<script src="js/lib/modernizr-latest.js"></script>-->
 </head>
 <body>
 
-	<header id="page-header">
-	</header>
+	<header id="page-header"></header>
 
 	<div id="main" role="main" class="container">
 
@@ -17,10 +17,8 @@
 
 	</div>
 
-	<footer id="page-footer" class="container">
-	</footer>
+	<footer id="page-footer" class="container"></footer>
 
-	
 	<script data-main="js/app.min" src="js/lib/require.min.js"></script> <!-- 3 requests, 105KB -->
 	<!--<script data-main="js/app" src="js/lib/require.js"></script>--> <!-- 22 requests, 429KB -->
 </body>

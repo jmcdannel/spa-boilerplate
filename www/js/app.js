@@ -2,7 +2,10 @@ requirejs.config({
     baseUrl: 'js/app',
 
     paths: {
-      jquery: '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min',
+      jquery: [
+        '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min',
+        '../lib/jquery.min'
+      ],
       lodash: '../lib/lodash',
       backbone: '../lib/backbone',
       handlebars: '../lib/handlebars.runtime',

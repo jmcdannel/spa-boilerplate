@@ -64,7 +64,7 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('grunt-contrib-handlebars');
 
 
-  grunt.registerTask('default', []);
+  grunt.registerTask('default', ['build']);
   grunt.registerTask('dev', ['handlebars', 'sass']);
   grunt.registerTask('build', ['handlebars', 'sass', 'cssmin', 'requirejs']);
 

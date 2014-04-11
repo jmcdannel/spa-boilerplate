@@ -5,7 +5,7 @@ define([
 
   var deferred = new $.Deferred();
 
-  function init(language) {
+  function init() {
     
     var model = new _model();
     model.fetch({ success: model_fetched });
